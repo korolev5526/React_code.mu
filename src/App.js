@@ -1,4 +1,4 @@
-//29.1
+//29.2
 import React, { useState } from "react";
 
 function App() {
@@ -29,6 +29,7 @@ function App() {
       <input
         value={editNum === null ? "" : notes[editNum]}
         onChange={changeHandler}
+        onBlur={(event) => (event.target.value = "")}
       />
     </div>
   );
